@@ -55,7 +55,7 @@ def send_sms(recipient, message):
                       data=payload)
     return str(r.text)
 if __name__ == '__main__':
-    args = my_parser.parse_args()
+    args = prsr.parse_args()
     res = send_sms(args.Recipient, args.Message)
     if res == '0':
         print("Message sent")
