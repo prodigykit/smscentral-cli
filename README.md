@@ -6,4 +6,7 @@ You will need an SMS central account to use the script.
 
 ## Usage
 
-__Coming soon__
+1. Copy config file 
+> `$ cp sms.cfg.example sms.cfg`
+
+2. `$ python ./sms.py <MESSAGE STRING> <RECIPIENT>`
