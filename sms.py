@@ -35,13 +35,7 @@ prsr.add_argument('Recipient',
 
 # Function that sends API request
 def send_sms(recipient, message):
-    msg = """
-    %s
-    
-    %s
-    
-    %s
-    """ % (cfg['message.prefix'], message, cfg['message.suffix'])
+    msg = "%s%s%s" % (cfg['message.prefix'], message, cfg['message.suffix'])
     payload = {
         "USERNAME": cfg['api.username'],
         "PASSWORD": cfg['api.username'],
