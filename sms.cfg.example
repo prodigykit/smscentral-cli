@@ -1,0 +1,6 @@
+[api]
+username = ""
+password = ""
+
+[message]
+campaign = "SOMETHING"
